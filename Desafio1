@@ -1,0 +1,31 @@
+console.log("Qual seu nome");
+Name = "Meta Mace";
+console.log("Qual seu XP?");
+let XP = 1001;
+
+
+
+if (XP<=1000){
+    console.log("O Herói de nome "+ Name + " está no nível de Ferro");
+}
+if(XP>1000 && XP<=2000){
+    console.log("O Herói de nome "+ Name + " está no nivel de Bronze");
+}
+if (XP>2000 && XP<=5000){
+    console.log("O Herói de nome "+ Name + "está no nivel de Prata");
+};
+if (XP>5000 && XP<=7000){
+    console.log("O Herói de nome "+ Name +"está no nivel de Ouro");
+}
+if  (XP>7000 && XP<=8000){
+    console.log ("O Herói de nome "+ Name + "está no nivel de Platina");
+}
+if (XP>8000 && XP<=9000){
+    console.log ("O Herói de nome "+ Name + "está no nivel de Ascendente");
+}
+if (XP>9000 && XP<=10000){
+    console.log ("O Herói de nome "+ Name + "está no nivel de Imortal");
+}
+if  (XP>10000){
+    console.log ("O Herói de nome "+ Name + "está no nivel de Radiante");
+}
