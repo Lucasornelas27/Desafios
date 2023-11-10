@@ -1,0 +1,40 @@
+let XP = 8002
+
+function classificador(XP){
+    if(XP<=1000){
+    let nivel ="O Herói de nome Meta Mace está no nível de Ferro" 
+    return nivel;
+    }
+    if(XP>=1000 && XP<=2000){
+    let nivel ="O Herói de nome Meta Mace está no nível de Bronze " 
+    return nivel;  
+    }
+    if(XP>=2001 && XP<=5000){
+    let nivel ="O Herói de nome Meta Mace está no nível de Prata " 
+    return nivel;  
+    }
+    if(XP>=5001 && XP<=7000){
+    let nivel ="O Herói de nome Meta Mace está no nível de Ouro " 
+    return nivel;  
+    }
+    if(XP>7001 && XP<=8000){
+    let nivel ="O Herói de nome Meta Mace está no nível de Platina " 
+    return nivel;  
+    }
+    if(XP>8001 && XP<=9000){
+    let nivel ="O Herói de nome Meta Mace está no nível de Ascendente " 
+    return nivel;  
+    }
+    if(XP>9001 && XP<=10000){
+    let nivel ="O Herói de nome Meta Mace está no nível de Imortal " 
+    return nivel;  
+    }
+    if(XP>=10.001){
+    let nivel ="O Herói de nome Meta Mace está no nível de Radiante " 
+    return nivel; 
+    }
+}
+
+classificador(XP)
+let rank = classificador(XP)
+console.log(rank)
