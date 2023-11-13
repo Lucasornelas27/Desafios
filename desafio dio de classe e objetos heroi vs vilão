@@ -1,0 +1,51 @@
+class hero{
+    constructor(nome,idade, classe, poder,defesa){
+        this.nome = nome;
+        this.idade = idade;
+        this.classe = classe;
+        this.poder = poder;
+        this.defesa = defesa;
+    }
+    escrever(){
+        console.log(`O heroi escolhido foi ${this.nome} ele é tem ${this.idade} anos de idade e é da classe ${this.classe}`);
+    }
+    ataque(){
+        console.log(`O heroi ${this.nome} atacou o vilão com ${this.poder}`);
+    }
+    defender(){
+        console.log(`O heroi ${this.nome} se defendeu do vilão com ${this.defesa}`);
+    }
+}
+class villain{
+    constructor(nome,nivel,classe,poder,defesa){
+        this.nome = nome;
+        this.nivel = nivel;
+        this.classe = classe;
+        this.poder = poder;
+        this.defesa = defesa;
+    }
+    Apareceu(){
+        console.log(`O vilão  apareceu  ${this.nome} ele é do nivel ${this.nivel}  e é da classe ${this.classe}`);
+    }
+    ataque(){
+        console.log(`O vilão ${this.nome} atacou com ${this.poder}`);
+    }
+    defender(){
+        console.log(`O vilão ${this.nome} se defendeu do vilão com ${this.defesa}`);
+    }
+
+}
+
+let Mago = new hero("sogrub",18, "Mago", "magia", "domo dos 4 elementos");
+let barbaro = new hero("konan", 12, "barbaro","espada","escudo");
+let arqueiro = new hero("legolas", 9,"Arqueiro", "atirando","camuflagem");
+let necromante = new villain("sauron", 100, "necromante","soldados zumbis","torre de ossos");
+let esqueleto = new villain("esqueleto",33, "esqueleto","rajada de energia");
+let deusBaixo = new villain("hades",777, "deus","senhor dos mortos",);
+
+Mago.escrever();
+necromante.Apareceu();
+Mago.ataque();
+necromante.defender();
+necromante.ataque();
+Mago.defender();
