@@ -1,0 +1,14 @@
+luan = [6.0, 7.25, 8, 10];
+console.log(luan);
+nota1 = (luan[0]);
+nota2 = (luan[1]);
+nota3 = (luan[2]);
+nota4 = (luan[3]);
+
+media = (nota1+nota2+nota3+nota4)/4
+console.log(media);
+if(media>=6)
+    console.log("aprovado");
+
+    else
+    console.log("reprovado");
